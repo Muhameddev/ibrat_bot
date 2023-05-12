@@ -1,0 +1,5 @@
+aiogram
+gunicorn
+django
+djangorestframework
+django-jazzmin
