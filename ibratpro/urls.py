@@ -10,4 +10,5 @@ urlpatterns = [
     path('nom/', NomView.as_view(), name="nom"),
     path('video/', VideoView.as_view(), name="video"),
 ]
-urlpatterns+= static(settings.STATIC_URL , document_root = settings.STATIC_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL , document_root = settings.STATIC_ROOT)
